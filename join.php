@@ -34,15 +34,18 @@ require 'includes/menu.php';
             you belong here.
         </p>
 
-        <a class="primary-link" href="contact.php">
+        <a
+            class="primary-link"
+            href="https://form.jotform.com/261073629911054"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Join Now
 
-            Enquire about joining
-
-            <span aria-hidden="true">
-                →
-            </span>
-
-        </a>
+        <span aria-hidden="true">
+            →
+        </span>
+    </a>
 
     </section>
 

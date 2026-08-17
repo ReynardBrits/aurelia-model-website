@@ -56,3 +56,18 @@ document.addEventListener("keydown", function (event) {
         closeMenu();
     }
 });
+
+const currentPage =
+    window.location.pathname.split("/").pop() || "index.php";
+
+const navigationLinks =
+    document.querySelectorAll(".menu-nav a");
+
+navigationLinks.forEach(function (link) {
+    const linkAddress =
+        link.getAttribute("href").split("#")[0];
+
+    if (linkAddress === currentPage) {
+        link.classList.add("active-page");
+    }
+});

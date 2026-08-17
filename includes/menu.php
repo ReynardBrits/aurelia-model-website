@@ -62,13 +62,23 @@
 
     <div class="menu-socials">
 
-        <a href="#" aria-label="Aurelia Model Academy on Instagram">
-            Instagram
-        </a>
+    <a
+        href="https://www.instagram.com/aurelia.model.academy/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Aurelia Model Academy on Instagram"
+    >
+        Instagram
+    </a>
 
-        <a href="#" aria-label="Aurelia Model Academy on Facebook">
-            Facebook
-        </a>
+    <a
+        href="https://www.facebook.com/share/18uieqjG1S/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Aurelia Model Academy on Facebook"
+    >
+        Facebook
+    </a>
 
-    </div>
+</div>
 </aside>
