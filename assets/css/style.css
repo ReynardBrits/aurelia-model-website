@@ -391,6 +391,148 @@ body:not(.home-page) .menu-button {
     letter-spacing: 0.16em;
 }
 
+/* PAGE INTRODUCTION */
+
+.page-introduction {
+    max-width: 680px;
+    margin: 3rem 0 0;
+
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    line-height: 1.65;
+}
+
+
+/* TRAINING AREAS */
+
+.focus-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    margin-top: 4rem;
+}
+
+.focus-list span {
+    padding: 0.8rem 1.15rem;
+
+    border: 1px solid #bdbdbd;
+    border-radius: 100px;
+
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+}
+
+
+/* PRICING SECTION */
+
+.pricing-section {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: clamp(3rem, 8vw, 8rem);
+
+    margin-top: 8rem;
+    padding-top: 4rem;
+
+    border-top: 1px solid #bbbbbb;
+}
+
+.pricing-section h2 {
+    margin: 1rem 0 1.25rem;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 300;
+
+    text-transform: uppercase;
+}
+
+.pricing-introduction > p:last-child {
+    max-width: 420px;
+
+    line-height: 1.7;
+}
+
+
+/* PRICE CARDS */
+
+.price-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+
+    padding: 1.75rem 0;
+
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.price-card > p {
+    grid-column: 1 / -1;
+
+    margin: 0 0 1.4rem;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.price-card strong {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1;
+}
+
+.price-card span {
+    color: #666666;
+
+    font-size: 0.8rem;
+
+    text-transform: uppercase;
+}
+
+/* JOIN PAGE */
+
+.join-statement {
+    max-width: 950px;
+
+    margin-top: 5rem;
+    padding-top: 3rem;
+
+    border-top: 1px solid #bbbbbb;
+}
+
+.join-statement > p {
+    margin: 0 0 3rem;
+
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    line-height: 1.25;
+}
+
+.primary-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding-bottom: 0.5rem;
+
+    border-bottom: 1px solid #111111;
+
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+.primary-link span {
+    font-size: 1.5rem;
+
+    transition: transform 0.2s ease;
+}
+
+.primary-link:hover span {
+    transform: translateX(0.4rem);
+}
+
 /* MOBILE */
 
 @media (max-width: 700px) {
@@ -448,6 +590,28 @@ body:not(.home-page) .menu-button {
     .story-intro,
     .story-section-wide {
         grid-column: auto;
+    }
+
+    .focus-list {
+        margin-top: 3rem;
+    }
+
+    .pricing-section {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+        margin-top: 5rem;
+        padding-top: 3rem;
+    }
+
+    .price-card {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .price-card > p {
+        grid-column: auto;
+        margin-bottom: 0.5rem;
     }
 }
 
